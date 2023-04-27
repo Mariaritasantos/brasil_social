@@ -5,27 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type ="text/css" href="./css/style.css">
-    <title>..:: Brasil_social ::..</title>
+    <link rel="stylesheet" type ="text/css" href="./bootstrap/css/bootstrap.min.css">
+<title>..:: Brasil_social ::..</title>
 </head>
 <body>
  <!--Aula 24/04/2023 - html -->   
- <header id="header">
-    <a id="logo" href="index.html"><img src="./img/canva.png" alt="logo Brasil_social""></a>
-    <nav id="nav">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-            <span id="hamburger"></span>
+ <!-- início Menu Responsivo-->
+    <header id="header">
+     <a id="logo" href="index.html"><img src="./img/canva.png" alt="logo Brasil_social""></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMneu" href="index.html" >Home</a></li>
+                <li><a class="linkMneu" href="produtos.html" >Produtos</a></li>
+                <li><a class="linkMneu" href="streaming.html" >Streaming</a></li>
+                <li><a class="linkMneu" href="contato.html" >Contato</a></li>
+                <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo -->          
+            </ul>
+       </nav>
+    </header>
+    <!--Fim Menu Responsivo-->
+    <!--Início Carousel Página Principal-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img
+                src="./img/carouse -1.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+             </div>
+        
+            <div class="carousel-item" data-bs-interval="1500">
+                <img
+                src="./img/carouse -2.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+             </div>
+        
+            <div class="carousel-item" data-bs-interval="1500">
+                <img
+                src="./img/carouse -3.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+             </div>
+        
+            <div class="carousel-item" data-bs-interval="1500">
+                <img
+                src="./img/carouse -4.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+             </div>
+        
+            <div class="carousel-item" data-bs-interval="1500">
+                <img
+                src="./img/carouse -5.jpg"
+                class="d-block w-100"
+                alt="..."
+                />
+             </div>
+        </div>
+        <!-- Fim imagens Carousel-->
+        <!-- Início controle do Carousel-->
+        <button 
+            class="carousel-control-prev"
+            data-bs-target="#carouselExampleInterval"
+            type="button"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <ul id="menu" role="menu">
-            <li><a class="linkMneu" href="index.html" >Home</a>/li>
-            <li><a class="linkMneu" href="produtos.html" >Produtos</a>/li>
-            <li><a class="linkMneu" href="streaming.html" >Streaming</a>/li>
-            <li><a class="linkMneu" href="contato.html" >Contato</a>/li>
-            <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo -->          
-         </ul>
-
-    </nav>
-    
-
- </header>
+        <button 
+            class="carousel-control-next"
+            data-bs-target="#carouselExampleInterval"
+            type="button"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Fim do controle do Carousel-->
+    <!--Fim do Carousel-->
 </body>
+
+
+    <script trype="text/javascript" src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>
